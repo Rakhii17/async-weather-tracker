@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌦️ Weather Tracker</h1>
+<div class="weather-bg">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+
+    <div class="wind w1"></div>
+    <div class="wind w2"></div>
+    <div class="wind w3"></div>
+</div>
+
+<div class="main-wrapper">
+
+  
+    <div class="card">
+        <h3>Search City</h3>
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <button id="searchBtn">Search</button>
+
+        <h4>Search History</h4>
+        <div id="historyList"></div>
+    </div>
+
+   
+    <div class="card weather-card">
+
+        <div id="errorBox" class="error-text" style="display:none;">
+            City not found
+        </div>
+
+        <div id="weatherData">
+
+            <div class="main-weather">
+                <div id="city">--</div>
+                <div id="temp">-- °C</div>
+                <div id="weather">--</div>
+            </div>
+
+           
+            <div class="info-grid">
+                <div class="info-box">
+                    <span>Humidity</span>
+                    <p id="humidity">--</p>
+                </div>
+
+                <div class="info-box">
+                    <span>Wind</span>
+                    <p id="wind">--</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="console-box">
+    <h3>Console – Event Loop</h3>
+    <pre id="logOutput"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
