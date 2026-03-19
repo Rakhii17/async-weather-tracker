@@ -1,6 +1,6 @@
 const API_KEY = "ad85876333aeca487dfc9fe18b923f40";
 
-const logOutput = document.getE95f92a4c09e7551dc56d61b65e51210lementById("logOutput");
+const logOutput = document.getElementById("logOutput");
 const searchBtn = document.getElementById("searchBtn");
 
 function logMessage(msg) {
